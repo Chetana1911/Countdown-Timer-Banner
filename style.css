@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 56vh;
+    background-color: #f8f9fa;
+}
+
+.offer-banner {
+    background: linear-gradient(to right, #ffcc00, #ff9900);
+    border-radius: 54px;
+    padding: 0px 20px;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 10px;
+    flex-wrap: wrap;
+}
+
+.icon-container {
+    flex-shrink: 0;
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.icon-container img {
+    width: 75px;
+    height: auto;
+    margin-left: -37px;
+}
+
+.text-container {
+    flex-grow: 1;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #333;
+    font-weight: bold;
+    flex-wrap: wrap;
+}
+
+.offer-title {
+    margin: 0;
+    font-size: 1.2em;
+
+}
+
+.timer,
+.discount,
+.code {
+    margin: 0 10px;
+    font-size: 1.1em;
+    flex: 1 1 100%;
+    text-align: center;
+}
+
+#ends-in {
+    font-weight: 100;
+    font-size: medium;
+}
+
+.timer {
+    color: #333;
+    margin-left: 285px;
+}
+
+.discount {
+    color: #333;
+    margin: 0 0 0 167px;
+}
+
+#use-code {
+    font-weight: 100;
+    font-size: medium;
+}
+
+.code {
+    color: #333;
+}
+
+.discount-code {
+    display: flex;
+    flex-direction: row;
+}
+
+@media(max-width:500px) {
+
+    .icon-container {
+        text-decoration: underline;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 10px;
+    }
+
+    .clock-icon {
+        width: 53px;
+        height: auto;
+        margin-left: -5px;
+    }
+
+    .icon-container img {
+        width: 53px;
+        height: auto;
+        margin-left: 4px;
+    }
+
+    .text-container {
+
+        font-size: 24px;
+        margin-bottom: 10px;
+        color: #333;
+        margin-top: -48px;
+    }
+
+    .timer {
+        margin-left: 34px;
+        margin-top: 0;
+    }
+
+    .discount-code {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 52px;
+        margin-bottom: 12px;
+        justify-content: space-between;
+    }
+
+
+    .discount {
+        color: #333;
+        margin: 0 0 0 167px;
+        margin-left: -229px;
+    }
+}
+@media (min-width: 600px) {
+
+    .timer,
+    .discount,
+    .code {
+        flex: none;
+    }
+
+}
+    
+
+
